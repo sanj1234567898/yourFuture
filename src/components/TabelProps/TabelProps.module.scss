@@ -1,0 +1,28 @@
+@import "../../scss/variables";
+
+.tabel__props {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: auto;
+  gap: calc(0.5rem + 0.23333vw);
+  color: $primaryColor;
+
+  button {
+    background-color: $layoutColor;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease-in-out;
+    border: none;
+    cursor: pointer;
+  }
+
+  button:hover {
+    color: #fff;
+    background-color: $primaryColor;
+  }
+
+  button:active {
+    scale: 0.98;
+  }
+}

@@ -1,0 +1,26 @@
+@import "./variables";
+@import "./libs/normalize";
+
+:root {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $background;
+  font-family: "League Spartan", sans-serif;
+  font-size: calc(1rem + 0.34722222vw);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.container {
+  max-width: 142rem;
+  padding: 0 1rem;
+  margin: 0 auto;
+}

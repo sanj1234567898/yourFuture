@@ -1,0 +1,48 @@
+@import "../../scss/variables";
+
+.search__section {
+  margin-top: 3rem;
+}
+
+.search {
+  background-color: $filterTablets;
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid $primaryColor;
+  border-radius: 1rem;
+
+  &__value {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: calc(0.5rem + 0.32222vw);
+
+    p {
+      background-color: $layoutColor;
+      padding: 0.6rem;
+      border-bottom-left-radius: 0.5rem;
+      border-top-left-radius: 0.5rem;
+    }
+  }
+
+  &__value-item {
+    display: flex;
+    align-items: center;
+
+    .search__svg-elem {
+      background-color: $primaryColor;
+      padding: 0.5rem;
+      border-bottom-right-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+      transition: all 0.2s ease-in;
+    }
+
+    .search__svg-elem:hover {
+      background-color: $activeColor;
+    }
+
+    svg {
+      color: $filterTablets;
+    }
+  }
+}

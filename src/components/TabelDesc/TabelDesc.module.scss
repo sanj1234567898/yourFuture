@@ -1,0 +1,42 @@
+@import "../../scss/variables";
+
+.tabel__main-description {
+  margin-left: 2rem;
+  margin-right: 1rem;
+
+  .main-description__company {
+    display: flex;
+    align-items: center;
+    gap: calc(0.5rem + 0.23333vw);
+
+    .new {
+      color: #fff;
+      background-color: $primaryColor;
+      padding: 0.6rem;
+      border-radius: 1rem;
+    }
+
+    .featured {
+      color: #fff;
+      background-color: $activeColor;
+      padding: 0.6rem;
+      border-radius: 1rem;
+    }
+  }
+
+  .main-description__name-position {
+    font-size: calc(1rem + 0.63333vw);
+    transition: all 0.3s linear;
+  }
+
+  .main-description__name-position:hover {
+    color: $primaryColor;
+    cursor: pointer;
+  }
+
+  .main-description__props {
+    display: flex;
+    gap: calc(0.5rem + 0.23333vw);
+    font-weight: 500;
+  }
+}

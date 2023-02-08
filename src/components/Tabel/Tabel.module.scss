@@ -1,0 +1,27 @@
+@import "../../scss/variables";
+
+.container__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.section__table {
+  margin: 5rem 0;
+}
+
+.tabel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  padding: 1rem 3rem;
+  background-color: $filterTablets;
+  box-shadow: 15px 15px 5px -5px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.tabel:hover {
+  scale: 1.01;
+}
